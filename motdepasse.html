@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<title>Mot de passe</title>
+<style>
+ body {
+    background-color: lightblue;
+    padding: 30px;
+    }
+</style>
+<script>
+function checkPassword() {
+var password = document.getElementById("passwordBox");
+var passwordText = password.value;
+if(passwordText == "nateandu88fr") {
+location.href = "gagner.html"
+return true;
+} 
+alert("Acces Interdit! Le mot de passe marche pas!");
+return false;
+}
+</script>
+</head>
+<body>
+<p style="font-size: 30pt;",>Natan et Ean</p>
+<p>S'il vous plait entrer le mot de passe pour entrer dans la chambre.</p>
+<p>Password:<input id="passwordBox" type="password"();">
+<a onclick="return checkPassword();">
+Cliquez ici pour envoyer le mot de passe
+</a>
+</body>
+</html>
